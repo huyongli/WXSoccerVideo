@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="navbar">
+      <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+            <view class="navbar__title">{{item.name}}</view>
+          </view>
+      </block>
+      <view class="navbar__slider" style="width: {{sliderWidth}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+  </view>
+  <view style="position: absolute;top: 68rpx;width: 100%;height:{{contentHeight}}px">
+    <swiper current="{{activeIndex}}" duration="300" bindchange="bindChange">
+      <swiper-item wx:for="{{tabs}}" wx:for-item="tab" wx:key="*this">
+        <scroll-view scroll-y="true" bindscrolltolower="onLoadMore">
+          <view wx:for="{{tab.videos}}" wx:for-item="video" wx:key="*this" class="navtab_content_item">
+          <image src="{{video.thumb}}"></image>
+          <view>{{video.title}}</view>
+        </view>
+        </scroll-view>
+      </swiper-item>
+    </swiper> 
+  </view>
+</view>

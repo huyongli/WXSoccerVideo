@@ -1,0 +1,11 @@
+/**app.wxss**/
+page {
+  height: 100%;
+}
+view , scroll-view, page {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+

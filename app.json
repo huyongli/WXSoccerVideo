@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#16B13A",
+    "navigationBarTitleText": "足球视频",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": "true"
+  }
+}
