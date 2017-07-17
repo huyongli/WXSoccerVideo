@@ -105,6 +105,14 @@ Page({
     console.log("onLoadMore:" + tab.name);
   },
 
+  onItemClick: function (event) {
+    var url = event.currentTarget.dataset.video.url;
+    var title = event.currentTarget.dataset.video.title;
+    wx.navigateTo({
+      url: '../video/video?url=' + url + "&title=" + title
+    })
+  },
+
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */

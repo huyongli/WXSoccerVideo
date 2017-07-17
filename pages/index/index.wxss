@@ -83,5 +83,5 @@ swiper, scroll-view {
 .navtab_content_item view {
   flex-grow: 1;
   flex-shrink: 1;
-  font-size: 15px;
+  font-size: 14px;
 }

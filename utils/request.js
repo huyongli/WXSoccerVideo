@@ -10,7 +10,7 @@ function requestTab(tab, isRefresh, success, fail) {
   } else if (name == constant.NIDONGDE) {
     var url = isRefresh ? tab.refreshUrl : tab.moreUrl;
     requestDQDColumn(url, constant.DQD_NDD_MORE_URL_PREFIX, success, fail);
-  } else if (name == constant == constant.TXZQ) {
+  } else if (name == constant.TXZQ) {
     var url = isRefresh ? tab.refreshUrl : tab.moreUrl;
     requestDQDColumn(url, constant.DQD_TXZQ_MORE_URL_PREFIX, success, fail);
   }

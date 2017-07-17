@@ -11,7 +11,7 @@
     <swiper current="{{activeIndex}}" duration="300" bindchange="bindChange">
       <swiper-item wx:for="{{tabs}}" wx:for-item="tab" wx:key="*this">
         <scroll-view scroll-y="true" bindscrolltolower="onLoadMore">
-          <view wx:for="{{tab.videos}}" wx:for-item="video" wx:key="*this" class="navtab_content_item">
+          <view wx:for="{{tab.videos}}" wx:for-item="video" data-video="{{video}}" wx:key="*this" class="navtab_content_item" bindtap="onItemClick">
           <image src="{{video.thumb}}"></image>
           <view>{{video.title}}</view>
         </view>

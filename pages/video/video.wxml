@@ -1,0 +1,5 @@
+<!--video.wxml-->
+<view class="root">
+  <video src="{{url}}" style="width: 100%; height: {{videoHeight}}px;" autoplay="true"></video>
+  <view class="video_title">{{title}}</view>
+</view>
