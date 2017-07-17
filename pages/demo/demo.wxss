@@ -1,0 +1,59 @@
+view , page {
+  padding: 0px;
+  margin: 0px;
+}
+
+.page {
+  height: 100%;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    width: 100%;
+}
+
+.navbar__item {
+    position: relative;
+    display: block;
+    flex: 1;
+    padding: 10rpx 0;
+    text-align: center;
+    font-size: 0;
+    height: 48rpx;
+    line-height: 48rpx;
+}
+
+.navbar__item_on {
+    color: #16B13A;
+}
+
+.navbar__slider {
+    position: absolute;
+    display: block;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #16B13A;
+    transition: transform .3s;
+}
+
+.navbar__title{
+    display: inline-block;
+    font-size: 15px;
+    max-width: 8em;
+    text-align: center;
+}
+
+swiper {
+  height: 100%;
+}
+
+swiper-item{
+  width: 100%;
+  padding-top: 20rpx;
+  text-align: center;
+}
