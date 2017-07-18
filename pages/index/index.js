@@ -61,8 +61,9 @@ Page({
       function (data) {
         tab.videos = data.videos;
         tab.moreUrl = data.next;
+        tab.showLoadMoreView = true;
         that.data.tabs[index] = tab;
-        that.setData({ tabs: that.data.tabs });
+        that.setData({ tabs: that.data.tabs});
         wx.hideLoading();
       },
       function () {
@@ -78,9 +79,6 @@ Page({
   },
 
   onLoadMore: function() {
-    wx.showLoading({
-      title: '加载中...'
-    });
     var that = this;
     var index = that.data.activeIndex;
     var tab = that.data.tabs[index];
@@ -91,10 +89,8 @@ Page({
         tab.moreUrl = data.next;
         that.data.tabs[index] = tab;
         that.setData({ tabs: that.data.tabs });
-        wx.hideLoading();
       },
       function () {
-        wx.hideLoading();
         wx.showToast({
           title: '加载失败',
           icon: 'success',

@@ -85,3 +85,12 @@ swiper, scroll-view {
   flex-shrink: 1;
   font-size: 14px;
 }
+
+.load_more_view {
+  width: 100%;
+  height: 30rpx;
+  font-size: 14px;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
